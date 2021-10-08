@@ -29,4 +29,9 @@ async def start(message: Message):
         with open("data.json", "w", encoding='utf-8') as file:
             file.write(json_data)
 
-        await message.answer(f'Добро пожаловать, {first_name}')
+        await message.answer(f'Добро пожаловать, {first_name}\n\n'
+                             "Commands:\n"
+                             "/set [crypt] [minimum] [maximum: Optional]\n"
+                             "/stop [crypt]\n"
+                             "/stopAll\n\n"
+                             "If you need access to bot - @Sasha_Zuev")
