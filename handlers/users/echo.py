@@ -7,7 +7,11 @@ from loader import dp
 @dp.message_handler()
 async def echo(message: types.Message):
     """Answer for simple message"""
-    await message.answer("Не понял команды! 🤨😲")
+    await message.answer("Не понял команды! 🤨😲\n"
+                         "Для остановки трекинга введите:\n"
+                         "/set [selected_crypt] stop\n"
+                         "Остановить все трекинги:\n"
+                         "/stopAll")
 
 
 @dp.message_handler(content_types=ContentType.PHOTO)

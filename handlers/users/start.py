@@ -23,7 +23,7 @@ async def start(message: Message):
         data["user"][f"{user_id}"]["username"] = username
         data["user"][f"{user_id}"]["first_name"] = first_name
         data["user"][f"{user_id}"]["second_name"] = last_name
-        data["user"][f"{user_id}"]["tracking"] = False    # The value of tracking in action. Default - False!
+        data["user"][f"{user_id}"]["tracking"] = {}    # The value of tracking in action. Default - False!
 
         json_data = json.dumps(data, indent=4, ensure_ascii=False)
         with open("data.json", "w", encoding='utf-8') as file:

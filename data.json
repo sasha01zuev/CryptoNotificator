@@ -4,7 +4,16 @@
             "username": "Sasha_Zuev",
             "first_name": "Саша",
             "second_name": "Зуев",
-            "tracking": false
+            "tracking": {
+                "btc": false,
+                "eth": false
+            }
+        },
+        "1919322102": {
+            "username": "BogDanIzma",
+            "first_name": "Богдан",
+            "second_name": "Измаилов",
+            "tracking": {}
         }
     }
 }
